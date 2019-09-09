@@ -25,7 +25,7 @@ namespace jimmysmod.Items
 			item.useStyle = 5;
 			item.noMelee = true;
 			item.knockBack = 0;
-			item.value = 400000;
+			item.value = 350000;
 			item.rare = 4;
             item.UseSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/SMG");
             item.autoReuse = true;
