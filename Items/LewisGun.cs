@@ -10,7 +10,7 @@ namespace jimmysmod.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Lewis Gun");
-			Tooltip.SetDefault("40% chance to not consume ammo\nAlso known as the Belgian Rattlesnake");
+			Tooltip.SetDefault("33% chance to not consume ammo\nAlso known as the Belgian Rattlesnake");
 		}
 
 		public override void SetDefaults()
@@ -52,7 +52,7 @@ namespace jimmysmod.Items
 		// Chance to not use ammo
 		public override bool ConsumeAmmo(Player player)
 		{
-			return Main.rand.NextFloat() >= .40f;
+			return Main.rand.NextFloat() >= .33f;
 		}
 	}
 }
