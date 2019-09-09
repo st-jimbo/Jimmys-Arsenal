@@ -10,7 +10,7 @@ namespace jimmysmod.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Trench Gun");
-            Tooltip.SetDefault("Fires a spread of pellets\nSo good the Germans wanted it banned");
+            Tooltip.SetDefault("Fires a spread of pellets\nSo effective the Germans wanted it banned");
         }
 
         public override void SetDefaults()
