@@ -1,0 +1,4 @@
+author = St. Jimmy
+version = 0.1
+displayName = Jimmy's Arsenal
+includePDB = true
