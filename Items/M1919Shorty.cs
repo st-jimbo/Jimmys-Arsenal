@@ -9,7 +9,7 @@ namespace jimmysmod.Items
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("M1919 Super Shorty");
+			DisplayName.SetDefault("M1919 Beast Mode");
 			Tooltip.SetDefault("50% chance to not consume ammo\nJust keep it on target");
 		}
 
