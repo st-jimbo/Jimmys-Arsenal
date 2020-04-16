@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework;
 
 namespace jimmysmod.Items
 {
-	public class MAC10 : ModItem
+	public class DeveloperMAC10 : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
