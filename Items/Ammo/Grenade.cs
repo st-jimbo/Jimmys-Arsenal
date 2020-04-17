@@ -3,7 +3,7 @@ using Terraria.ModLoader;
 using Terraria;
 using Microsoft.Xna.Framework;
 
-namespace jimmysmod.Items
+namespace jimmysmod.Items.Ammo
 {
     public class Grenade : GlobalItem
     {
