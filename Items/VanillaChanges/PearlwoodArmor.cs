@@ -2,6 +2,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
 using Microsoft.Xna.Framework;
+using System.Collections.Generic;
 
 namespace jimmysmod.Items.VanillaChanges
 {
@@ -14,21 +15,21 @@ namespace jimmysmod.Items.VanillaChanges
             // Pearlwood Helmet
             if (item.type == ItemID.PearlwoodHelmet)
             {
-			    item.defense = 5; // From 2
+			    item.defense = 8; // From 2
                 item.rare = 4; // From 0
             }
 
             // Pearlwood Breastplate
             if (item.type == ItemID.PearlwoodBreastplate)
             {
-			    item.defense = 6; // From 3
+			    item.defense = 8; // From 3
                 item.rare = 4; // From 0
             }
 
             // Pearlwood Greaves
             if (item.type == ItemID.PearlwoodGreaves)
             {
-			    item.defense = 5; // From 2
+			    item.defense = 7; // From 2
                 item.rare = 4; // From 0
             }
         }
@@ -58,17 +59,20 @@ namespace jimmysmod.Items.VanillaChanges
         {
             if (item.type == ItemID.PearlwoodHelmet)
             {
-                tooltips.Add(new TooltipLine(mod, "", "5% increased damage"));
+                TooltipLine line = new TooltipLine(mod, "tooltip", "5% increased damage");
+                tooltips.Insert(3, line);
             }
 
             if (item.type == ItemID.PearlwoodBreastplate)
             {
-                tooltips.Add(new TooltipLine(mod, "", "5% increased damage"));
+                TooltipLine line = new TooltipLine(mod, "tooltip", "5% increased damage");
+                tooltips.Insert(3, line);
             }
 
             if (item.type == ItemID.PearlwoodGreaves)
             {
-                tooltips.Add(new TooltipLine(mod, "", "15% increased movement speed"));
+                TooltipLine line = new TooltipLine(mod, "tooltip", "15% increased movement speed");
+                tooltips.Insert(3, line);
             }
         }
 
@@ -84,9 +88,10 @@ namespace jimmysmod.Items.VanillaChanges
         {
             if (set == "Pearlwood Armor")
             {
-			    player.setBonus = "+40 max mana and max life\n";
+			    player.setBonus = "+40 max mana and max life";
                 player.statLifeMax2 += 40;
-                player.statLifeMana2 += 40;
+                player.statManaMax2 += 40;
+                player.statDefense -= 1;
             }
 		}
 
