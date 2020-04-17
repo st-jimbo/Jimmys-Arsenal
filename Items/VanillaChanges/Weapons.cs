@@ -31,7 +31,7 @@ namespace jimmysmod.Items.VanillaChanges
             // Brand of the Inferno
             if (item.type == ItemID.DD2SquireDemonSword)
             {
-                item.damage = 60; // From 44
+                item.damage = 64; // From 44
             }
         }
     }
