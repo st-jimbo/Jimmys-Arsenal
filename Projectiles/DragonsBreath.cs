@@ -36,10 +36,7 @@ namespace jimmysmod.Projectiles
         // Debuff
         public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
         {
-            if (Main.rand.NextBool(5))
-            {
                 target.AddBuff(BuffID.OnFire, 3 * 60);
-            }
         }
 
         public override bool PreDraw(SpriteBatch spriteBatch, Color lightColor)
