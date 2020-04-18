@@ -12,7 +12,7 @@ namespace jimmysmod.Items.VanillaChanges
             // Chlorophyte Claymore
             if (item.type == ItemID.ChlorophyteClaymore)
             {
-                item.damage = 105; // From 75
+                item.damage = 100; // From 75
                 item.autoReuse = true; // From false
             }
 
@@ -28,10 +28,22 @@ namespace jimmysmod.Items.VanillaChanges
                 item.damage = 58; // From 49
             }
 
-            // Brand of the Inferno
-            if (item.type == ItemID.DD2SquireDemonSword)
+            // Chlorophyte Greataxe
+            if (item.type == ItemID.ChlorophyteGreataxe)
             {
-                item.damage = 64; // From 44
+                item.damage = 95; // From 70
+            }
+
+            // Chlorophyte Warhammer
+            if (item.type == ItemID.ChlorophyteWarhammer)
+            {
+                item.damage = 110; // From 80
+            }
+
+            // Chlorophyte Shotbow
+            if (item.type == ItemID.ChlorophyteShotbow)
+            {
+                item.damage = 43; // From 34
             }
         }
     }
