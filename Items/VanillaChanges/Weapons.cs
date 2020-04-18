@@ -19,6 +19,7 @@ namespace jimmysmod.Items.VanillaChanges
             if (item.type == ItemID.CobaltSword)
             {
                 item.damage = 55; // From 39
+                item.knockback = 4.75; // From 3.85
             }
 
             // Palladium Sword
