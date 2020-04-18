@@ -67,6 +67,7 @@ namespace jimmysmod.Items.VanillaChanges
             if (item.type == ItemID.CobaltNaginata)
             {
                 item.damage = 45; // From 29
+                item.knockback = 4.5; // From 4
                 item.useTime = 27; // From 28
                 item.useAnimation = 27; // From 28
             }
@@ -81,6 +82,7 @@ namespace jimmysmod.Items.VanillaChanges
             if (item.type == ItemID.MythrilHalberd)
             {
                 item.damage = 50; // From 35
+                item.knockback = 5.5; // From 5
                 item.useTime = 25; // From 26
                 item.useAnimation = 25; // From 26
             }
@@ -95,6 +97,7 @@ namespace jimmysmod.Items.VanillaChanges
             if (item.type == ItemID.AdamantiteGlaive)
             {
                 item.damage = 56; // From 38
+                item.knockback = 6.2; // From 6
                 item.useTime = 23; // From 25
                 item.useAnimation = 23; // From 25
             }
@@ -110,6 +113,7 @@ namespace jimmysmod.Items.VanillaChanges
             if (item.type == ItemID.CobaltWaraxe)
             {
                 item.damage = 72; // From 33
+                item.knockback = 5.5; // From 5
             }
 
             // Palladium Axe
@@ -122,6 +126,7 @@ namespace jimmysmod.Items.VanillaChanges
             if (item.type == ItemID.MythrilWaraxe)
             {
                 item.damage = 82; // From 39
+                item.knockback = 6.5; // From 6
             }
 
             // Orichalcum Axe
@@ -134,6 +139,7 @@ namespace jimmysmod.Items.VanillaChanges
             if (item.type == ItemID.AdamantiteWaraxe)
             {
                 item.damage = 88; // From 43
+                item.knockback = 7.5; // From 7
             }
 
             // Titanium Axe
@@ -147,6 +153,7 @@ namespace jimmysmod.Items.VanillaChanges
             if (item.type == ItemID.CobaltRepeater)
             {
                 item.damage = 43; // From 32
+                item.knockback = 1.75; // From 1.5
             }
 
             // Palladium Repeater
@@ -177,6 +184,12 @@ namespace jimmysmod.Items.VanillaChanges
             if (item.type == ItemID.TitaniumRepeater)
             {
                 item.damage = 51; // From 41
+            }
+
+            // Hallowed Repeater
+            if (item.type == ItemID.HallowedRepeater)
+            {
+                item.damage = 54; // From 43
             }
         }
     }
