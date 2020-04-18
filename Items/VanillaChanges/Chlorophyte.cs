@@ -28,6 +28,12 @@ namespace jimmysmod.Items.VanillaChanges
                 item.damage = 58; // From 49
             }
 
+            // Chlorophyte Shotbow
+            if (item.type == ItemID.ChlorophyteShotbow)
+            {
+                item.damage = 43; // From 34
+            }
+
             // Chlorophyte Greataxe
             if (item.type == ItemID.ChlorophyteGreataxe)
             {
@@ -40,11 +46,46 @@ namespace jimmysmod.Items.VanillaChanges
                 item.damage = 110; // From 80
             }
 
-            // Chlorophyte Shotbow
-            if (item.type == ItemID.ChlorophyteShotbow)
+            // Chlorophyte Pickaxe
+            if (item.type == ItemID.ChlorophytePickaxe)
             {
-                item.damage = 43; // From 34
+                item.damage = 50; // From 40
+                item.useTime = 6; // From 7
+                item.useAnimation = 20; // From 25
             }
+
+            // Chlorophyte Drill
+            if (item.type == ItemID.ChlorophyteDrill)
+            {
+                item.damage = 45; // From 35
+                item.useTime = 6; // From 7
+                item.useAnimation = 20; // From 25
+            }
+        }
+
+		public static void ExampleRecipeEditing(Mod mod) // Chlorophyte Bullet Recipe
+        {
+			finder = new RecipeFinder();
+			finder.AddIngredient(ItemID.ChlorophyteBar);
+			finder.AddIngredient(ItemID.MusketBall, 70);
+			finder.AddTile(TileID.MythrilAnvil);
+			finder.SetResult(ItemID.ChlorophyteBullet, 70);
+			Recipe exactRecipe = finder.FindExactRecipe();
+
+			bool isRecipeFound = exactRecipe != null;
+			if (isRecipeFound)
+			{
+				RecipeEditor editor = new RecipeEditor(exactRecipe);
+				editor.DeleteRecipe();
+			}
+        }
+        public override void AddRecipes()
+        {
+            ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.ChlorophyteBar, 1);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.SetResult(Items.ID.ChlorophyteBullet, 250);
+            recipe.AddRecipe();
         }
     }
 }
