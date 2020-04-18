@@ -65,7 +65,7 @@ namespace jimmysmod.Items.VanillaChanges
 
 		public static void ExampleRecipeEditing(Mod mod) // Chlorophyte Bullet Recipe
         {
-			finder = new RecipeFinder();
+            RecipeFinder finder = new RecipeFinder();
 			finder.AddIngredient(ItemID.ChlorophyteBar);
 			finder.AddIngredient(ItemID.MusketBall, 70);
 			finder.AddTile(TileID.MythrilAnvil);
@@ -84,7 +84,7 @@ namespace jimmysmod.Items.VanillaChanges
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.ChlorophyteBar, 1);
             recipe.AddTile(TileID.MythrilAnvil);
-            recipe.SetResult(Items.ID.ChlorophyteBullet, 250);
+            recipe.SetResult(ItemID.ChlorophyteBullet, 250);
             recipe.AddRecipe();
         }
     }
