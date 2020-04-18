@@ -39,13 +39,13 @@ namespace jimmysmod.Items.VanillaChanges
             // Pearlwood Helmet
             if (item.type == ItemID.PearlwoodHelmet)
             {
-			    player.allDamage += 0.05f;
+                player.lifeRegen += 2;
             }
 
             // Pearlwood Breastplate
             if (item.type == ItemID.PearlwoodBreastplate)
             {
-			    player.allDamage += 0.05f;
+                player.lifeRegen += 2;
             }
 
             // Pearlwood Greaves
@@ -59,13 +59,13 @@ namespace jimmysmod.Items.VanillaChanges
         {
             if (item.type == ItemID.PearlwoodHelmet)
             {
-                TooltipLine line = new TooltipLine(mod, "tooltip", "5% increased damage");
+                TooltipLine line = new TooltipLine(mod, "tooltip", "Increased life regeneration");
                 tooltips.Insert(3, line);
             }
 
             if (item.type == ItemID.PearlwoodBreastplate)
             {
-                TooltipLine line = new TooltipLine(mod, "tooltip", "5% increased damage");
+                TooltipLine line = new TooltipLine(mod, "tooltip", "Increased life regeneration");
                 tooltips.Insert(3, line);
             }
 
