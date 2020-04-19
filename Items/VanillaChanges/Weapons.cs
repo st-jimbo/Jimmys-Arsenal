@@ -15,6 +15,19 @@ namespace jimmysmod.Items.VanillaChanges
                 item.damage = 64; // From 44
             }
 
+            // Flying Dragon
+            if (item.type == ItemID.DD2SquireBetsySword)
+            {
+                item.damage = 115; // From 90
+            }
+
+
+            // Phantom Phoenix
+            if (item.type == ItemID.DD2PhoenixBow)
+            {
+                item.damage = 38; // From 24
+            }
+
             // Cobalt Sword
             if (item.type == ItemID.CobaltSword)
             {

@@ -1,4 +1,4 @@
 author = St. Jimmy
-version = 1.0.4
+version = 1.0.5
 displayName = Jimmy's Arsenal
 includePDB = true
