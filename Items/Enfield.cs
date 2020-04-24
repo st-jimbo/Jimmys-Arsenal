@@ -10,7 +10,7 @@ namespace jimmysmod.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Enfield");
-			Tooltip.SetDefault("Fires a powerful high velocity round");
+			Tooltip.SetDefault("Fires a powerful, high velocity bullet");
 		}
 
 		public override void SetDefaults()
