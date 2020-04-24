@@ -15,7 +15,7 @@ namespace jimmysmod.Items
 
 		public override void SetDefaults()
 		{
-			item.damage = 65;
+			item.damage = 74;
             item.crit = 8;
 			item.ranged = true;
 			item.width = 74;
@@ -26,7 +26,7 @@ namespace jimmysmod.Items
 			item.noMelee = true;
 			item.knockBack = 5f;
 			item.value = Item.sellPrice(gold: 25);
-			item.rare = 3;
+			item.rare = 4;
             item.UseSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/Rifle");
             //item.UseSound = SoundID.Item41;
             item.autoReuse = false;
