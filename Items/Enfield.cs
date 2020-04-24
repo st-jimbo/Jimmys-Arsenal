@@ -26,7 +26,7 @@ namespace jimmysmod.Items
 			item.knockBack = 5.5f;
 			item.value = 350000;
 			item.rare = 3;
-            item.UseSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/BoltAction");
+            item.UseSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/BoltAction2");
             //item.UseSound = SoundID.Item41;
             item.autoReuse = false;
 			item.shoot = 10;
