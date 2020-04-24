@@ -26,7 +26,7 @@ namespace jimmysmod.Items
 			item.knockBack = 1.5f;
 			item.value = 300000;
 			item.rare = 3;
-            item.UseSound = SoundID.Item40;
+            item.UseSound = SoundID.Item11;
             item.autoReuse = true;
 			item.shoot = 10;
 			item.shootSpeed = 10f;
