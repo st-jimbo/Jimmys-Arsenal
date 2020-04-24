@@ -21,6 +21,12 @@ namespace jimmysmod.Items.VanillaChanges
                 item.damage = 115; // From 90
             }
 
+            // Starfury
+            if (item.type == ItemID.Starfury)
+            {
+                item.damage = 30; // From 22
+                item.autoReuse = true; // From false
+            }
 
             // Phantom Phoenix
             if (item.type == ItemID.DD2PhoenixBow)
