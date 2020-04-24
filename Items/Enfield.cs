@@ -10,6 +10,7 @@ namespace jimmysmod.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Enfield");
+			Tooltip.SetDefault("Fires a powerful high velocity round");
 		}
 
 		public override void SetDefaults()
@@ -34,8 +35,18 @@ namespace jimmysmod.Items
 			item.useAmmo = AmmoID.Bullet;
 		}
 
-        // Change hold position
-        public override Vector2? HoldoutOffset()
+		public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
+		{
+			// Change bullet type
+			if (type == ProjectileID.Bullet)
+			{
+				type = ProjectileID.BulletHighVelocity;
+			}
+			return true;
+		}
+
+		// Change hold position
+		public override Vector2? HoldoutOffset()
 		{
 			return new Vector2(-9, 0);
 		}
