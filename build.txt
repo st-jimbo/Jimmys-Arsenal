@@ -2,3 +2,4 @@ author = St. Jimmy
 version = 1.0.6
 displayName = Jimmy's Arsenal
 includePDB = true
+buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*
