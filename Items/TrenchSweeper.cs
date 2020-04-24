@@ -10,17 +10,17 @@ namespace jimmysmod.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Trench Sweeper");
-            Tooltip.SetDefault("Fires a spread of pellets\nSo effective the Germans wanted it banned");
+            Tooltip.SetDefault("Fires a spread of pellets\n");
         }
 
         public override void SetDefaults()
         {
-            item.damage = 16;
+            item.damage = 24;
             item.ranged = true;
             item.width = 74;
             item.height = 18;
-            item.useTime = 32;
-            item.useAnimation = 32;
+            item.useTime = 26;
+            item.useAnimation = 26;
             item.useStyle = 5;
             item.noMelee = true;
             item.knockBack = 6f;
@@ -49,7 +49,7 @@ namespace jimmysmod.Items
             int numberProjectiles = 4; // amount of shots
             for (int i = 0; i < numberProjectiles; i++)
             {
-                Vector2 perturbedSpeed = new Vector2(speedX, speedY).RotatedByRandom(MathHelper.ToRadians(10));
+                Vector2 perturbedSpeed = new Vector2(speedX, speedY).RotatedByRandom(MathHelper.ToRadians(9));
                 Projectile.NewProjectile(position.X, position.Y, perturbedSpeed.X, perturbedSpeed.Y, type, damage, knockBack, player.whoAmI);
             }
             return false;
