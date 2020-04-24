@@ -18,6 +18,13 @@ namespace RecipeGroups
 				ItemID.TitaniumBar
 			});
 			RecipeGroup.RegisterGroup("jimmysmod:Adamantite", group);
+
+			RecipeGroup group2 = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Mythril Bar", new int[]
+			{
+				ItemID.MythrilBar,
+				ItemID.OrichalcumBar
+			});
+			RecipeGroup.RegisterGroup("jimmysmod:Mythril", group2);
 		}
 	}
 }

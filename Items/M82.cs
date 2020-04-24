@@ -38,15 +38,8 @@ namespace jimmysmod.Items
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.TitaniumBar, 12);
-            recipe.AddIngredient(mod.ItemType("ATRifle"));
-            recipe.AddTile(TileID.MythrilAnvil);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
-
-            recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.AdamantiteBar, 12);
-            recipe.AddIngredient(mod.ItemType("ATRifle"));
+			recipe.AddRecipeGroup("jimmysmod:Adamantite", 12);
+			recipe.AddIngredient(mod.ItemType("ATRifle"));
             recipe.AddTile(TileID.MythrilAnvil);
             recipe.SetResult(this);
             recipe.AddRecipe();
