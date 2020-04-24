@@ -28,6 +28,13 @@ namespace jimmysmod.Items.VanillaChanges
                 item.autoReuse = true; // From false
             }
 
+            // Flintlock
+            if (item.type == ItemID.FlintlockPistol)
+            {
+                item.damage = 13; // From 10
+                item.knockBack  = 1.5f; // From 0
+            }
+
             // Phantom Phoenix
             if (item.type == ItemID.DD2PhoenixBow)
             {

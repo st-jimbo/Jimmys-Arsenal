@@ -6,5 +6,5 @@ Buffs:
     - Hardmore ore axes have their damage doubled
     - Hardmore ore repeaters have their damage increased by 25%
     - Chlorophyte swords, shotbow, axe, hammer, drill, and pickaxe buffed
-    - Starfury, Brand of the Inferno, Flying Dragon, and Phantom Phoenix buffed
+    - Starfury, Flintlock, Brand of the Inferno, Flying Dragon, and Phantom Phoenix buffed
     - Pearlwood armor significantly buffed, gives increased life regen, max health, and max mana
