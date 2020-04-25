@@ -7,6 +7,8 @@ namespace jimmysmod.Items
 {
 	public class ThisMachine : ModItem
 	{
+		int count = 0;
+
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("This Machine");
@@ -52,13 +54,19 @@ namespace jimmysmod.Items
 			{
 				type = ProjectileID.BulletHighVelocity;
 			}
+			count += 1;
+			if (count == 8)
+			{
+				Main.PlaySound(mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/Ping"), player.Center);
+				count = 0;
+			}
 			return true;
 		}
 
 		// Change hold position
 		public override Vector2? HoldoutOffset()
 		{
-			return new Vector2(-9, 0);
+			return new Vector2(-9, 1);
 		}
 	}
 }

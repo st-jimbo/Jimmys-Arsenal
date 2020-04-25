@@ -69,7 +69,7 @@ namespace jimmysmod.Items
                 item.shoot = 10;
 				item.shootSpeed = 10f;
                 item.useAmmo = AmmoID.Bullet;
-				item.UseSound = SoundID.Item40;
+				item.UseSound = SoundID.Item11;
             }
             return base.CanUseItem(player);
 		}
