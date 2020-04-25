@@ -37,6 +37,7 @@ namespace jimmysmod.Items
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.RichMahogany, 30);
+            recipe.AddIngredient(ItemID.Bone, 15);
             recipe.AddIngredient(ItemID.IllegalGunParts, 1);
             recipe.AddIngredient(ItemID.Boomstick, 1);
             recipe.AddTile(TileID.Anvils);

@@ -25,7 +25,7 @@ namespace jimmysmod.Items
 			item.useStyle = 5;
 			item.noMelee = true;
 			item.knockBack = 5.5f;
-			item.value = 350000;
+			item.value = Item.sellPrice(gold: 25);
 			item.rare = 3;
             item.UseSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/BoltAction2");
             //item.UseSound = SoundID.Item41;
@@ -33,6 +33,18 @@ namespace jimmysmod.Items
 			item.shoot = 10;
 			item.shootSpeed = 22f;
 			item.useAmmo = AmmoID.Bullet;
+		}
+
+		public override void AddRecipes()
+		{
+			ModRecipe recipe = new ModRecipe(mod);
+			recipe.AddIngredient(ItemID.RichMahogany, 30);
+			recipe.AddIngredient(ItemID.Bone, 15);
+			recipe.AddIngredient(ItemID.IllegalGunParts, 1);
+			recipe.AddIngredient(ItemID.Musket, 1);
+			recipe.AddTile(TileID.Anvils);
+			recipe.SetResult(this);
+			recipe.AddRecipe();
 		}
 
 		public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
