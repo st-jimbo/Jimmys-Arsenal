@@ -22,9 +22,6 @@ namespace jimmysmod
             }
             if (type == NPCID.ArmsDealer && NPC.downedBoss3) // after skeletron
             {
-                shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Enfield>());
-                nextSlot++;
-
                 shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.ATRifle>());
                 nextSlot++;
             }
