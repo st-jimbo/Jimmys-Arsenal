@@ -37,28 +37,28 @@ namespace jimmysmod.Items
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.Musket, 1);
-            recipe.AddIngredient(ItemID.GoldBar, 8);
+            recipe.AddIngredient(ItemID.SilverBar, 8);
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();
 
             recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.Musket, 1);
-            recipe.AddIngredient(ItemID.PlatinumBar, 8);
+            recipe.AddIngredient(ItemID.TungstenBar, 8);
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();
 
             recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.TheUndertaker, 1);
-            recipe.AddIngredient(ItemID.GoldBar, 8);
+            recipe.AddIngredient(ItemID.SilverBar, 8);
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();
 
             recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.TheUndertaker, 1);
-            recipe.AddIngredient(ItemID.PlatinumBar, 8);
+            recipe.AddIngredient(ItemID.TungstenBar, 8);
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();
