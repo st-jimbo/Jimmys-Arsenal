@@ -37,14 +37,14 @@ namespace jimmysmod.Items
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddRecipeGroup("IronBar", 8);
-            recipe.AddIngredient(ItemID.SilverBar, 4);
+            recipe.AddIngredient(ItemID.CopperBar, 4);
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();
 
             recipe = new ModRecipe(mod);
             recipe.AddRecipeGroup("IronBar", 8);
-            recipe.AddIngredient(ItemID.TungstenBar, 4);
+            recipe.AddIngredient(ItemID.TinBar, 4);
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();
