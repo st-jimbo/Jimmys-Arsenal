@@ -10,18 +10,18 @@ namespace jimmysmod.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("SCAR-H");
-			Tooltip.SetDefault("33% chance to not consume ammo\nLand of the free");
+			Tooltip.SetDefault("33% chance to not consume ammo\nThe desert storm rages on");
 		}
 
 		public override void SetDefaults()
 		{
-			item.damage = 184;
+			item.damage = 180;
             item.crit = 2;
 			item.ranged = true;
 			item.width = 80;
 			item.height = 24;
-			item.useTime = 16;
-			item.useAnimation = 16;
+			item.useTime = 14;
+			item.useAnimation = 14;
 			item.useStyle = 5;
 			item.noMelee = true;
 			item.knockBack = 3.5f;
