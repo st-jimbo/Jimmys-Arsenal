@@ -10,45 +10,45 @@ namespace jimmysmod.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("ChlorophyteLongrifle");
-			Tooltip.SetDefault("Fires a powerful, high velocity bullet");
+			Tooltip.SetDefault("Fires a powerful crystal leaf");
 		}
 
 		public override void SetDefaults()
 		{
-			item.damage = 46;
+			item.damage = 110;
             item.crit = 8;
 			item.ranged = true;
 			item.width = 72;
 			item.height = 18;
-			item.useTime = 34;
-			item.useAnimation = 34;
+			item.useTime = 28;
+			item.useAnimation = 28;
 			item.useStyle = 5;
 			item.noMelee = true;
 			item.knockBack = 5.5f;
-			item.value = Item.sellPrice(gold: 25);
-			item.rare = 3;
+			item.value = Item.sellPrice(gold: 5);
+			item.rare = 7;
             item.UseSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/BoltAction2");
             //item.UseSound = SoundID.Item41;
             item.autoReuse = false;
 			item.shoot = 10;
-			item.shootSpeed = 22f;
+			item.shootSpeed = 16f;
 			item.useAmmo = AmmoID.Bullet;
 		}
 
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.RichMahogany, 30);
-			recipe.AddIngredient(ItemID.Bone, 15);
-			recipe.AddIngredient(ItemID.IllegalGunParts, 1);
-			recipe.AddIngredient(ItemID.Musket, 1);
-			recipe.AddTile(TileID.Anvils);
+			recipe.AddIngredient(ItemID.ChlorophyteBar, 12);
+			recipe.AddTile(TileID.MythrilAnvil);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
 
 		public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
 		{
+			// Secondary Projectile
+			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.CrystalLeafShot, damage, knockBack, player.whoAmI);
+
 			// Change bullet type
 			if (type == ProjectileID.Bullet)
 			{
