@@ -7,10 +7,12 @@ namespace jimmysmod.Items
 {
 	public class TheLiberator : ModItem
 	{
+		int laserCount = 0;
+
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("The Liberator");
-			Tooltip.SetDefault("Also fires a piercing vortex laser");
+			Tooltip.SetDefault("Every other shot fires a piercing vortex laser");
 		}
 
 		public override void SetDefaults()
@@ -47,8 +49,13 @@ namespace jimmysmod.Items
 		public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
 		{
 			// Secondary Projectile
-			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, mod.ProjectileType("VortexLaser"), damage, knockBack, player.whoAmI);
-			Main.PlaySound(SoundID.Item72, player.Center);
+			laserCount += 1;
+			if (laserCount == 2)
+			{
+				Projectile.NewProjectile(position.X, position.Y, speedX, speedY, mod.ProjectileType("VortexLaser"), damage, knockBack, player.whoAmI);
+				Main.PlaySound(SoundID.Item72, player.Center);
+				laserCount = 0;
+			}
 			// Change bullet type
 			if (type == ProjectileID.Bullet)
 			{
@@ -62,5 +69,6 @@ namespace jimmysmod.Items
 		{
 			return new Vector2(-12, 0);
 		}
+
 	}
 }

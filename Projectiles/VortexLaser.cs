@@ -23,7 +23,7 @@ namespace jimmysmod.Projectiles
 
 		public override void ModifyHitNPC(NPC target, ref int damage, ref float knockback, ref bool crit, ref int hitDirection)
 		{
-			projectile.damage = (int)(projectile.damage * 0.66);
+			projectile.damage = (int)(projectile.damage * 0.75);
 		}
 
 		public override void AI()

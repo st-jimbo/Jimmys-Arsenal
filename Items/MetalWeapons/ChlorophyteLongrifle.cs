@@ -60,7 +60,7 @@ namespace jimmysmod.Items.MetalWeapons
 		// Change hold position
 		public override Vector2? HoldoutOffset()
 		{
-			return new Vector2(-9, 0);
+			return new Vector2(-6, 0);
 		}
 	}
 }
