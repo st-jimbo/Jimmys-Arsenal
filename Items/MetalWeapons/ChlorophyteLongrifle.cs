@@ -15,13 +15,13 @@ namespace jimmysmod.Items.MetalWeapons
 
 		public override void SetDefaults()
 		{
-			item.damage = 110;
+			item.damage = 120;
             item.crit = 8;
 			item.ranged = true;
 			item.width = 72;
 			item.height = 18;
-			item.useTime = 28;
-			item.useAnimation = 28;
+			item.useTime = 30;
+			item.useAnimation = 30;
 			item.useStyle = 5;
 			item.noMelee = true;
 			item.knockBack = 5.5f;
