@@ -9,7 +9,7 @@ namespace jimmysmod.Items
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("ChlorophyteLongrifle");
+			DisplayName.SetDefault("Chlorophyte Longrifle");
 			Tooltip.SetDefault("Fires a powerful crystal leaf");
 		}
 
