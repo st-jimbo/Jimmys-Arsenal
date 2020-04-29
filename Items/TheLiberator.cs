@@ -1,0 +1,63 @@
+using Terraria.ID;
+using Terraria.ModLoader;
+using Terraria;
+using Microsoft.Xna.Framework;
+
+namespace jimmysmod.Items
+{
+	public class TheLiberator : ModItem
+	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("TheLiberator");
+			Tooltip.SetDefault("Also fires a vortex laser");
+		}
+
+		public override void SetDefaults()
+		{
+			item.damage = 156;
+            item.crit = 14;
+			item.ranged = true;
+			item.width = 82;
+			item.height = 26;
+			item.useTime = 20;
+			item.useAnimation = 20;
+			item.useStyle = 5;
+			item.noMelee = true;
+			item.knockBack = 4.5f;
+			item.value = Item.sellPrice(gold: 30);
+			item.rare = 9;
+            item.UseSound = SoundID.Item40;
+            item.autoReuse = true;
+			item.shoot = 10;
+			item.shootSpeed = 22f;
+			item.useAmmo = AmmoID.Bullet;
+		}
+
+		public override void AddRecipes()
+		{
+			ModRecipe recipe = new ModRecipe(mod);
+			recipe.AddIngredient(mod.ItemType("MarksmanRifle"));
+			recipe.AddIngredient(ItemID.FragmentVortex, 14);
+			recipe.AddTile(TileID.LunarCraftingStation);
+			recipe.SetResult(this);
+			recipe.AddRecipe();
+		}
+
+		public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
+		{
+			// Change bullet type
+			if (type == ProjectileID.Bullet)
+			{
+				type = ProjectileID.BulletHighVelocity;
+			}
+			return true;
+		}
+
+		// Change hold position
+		public override Vector2? HoldoutOffset()
+		{
+			return new Vector2(-12, 1);
+		}
+	}
+}
