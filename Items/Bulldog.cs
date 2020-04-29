@@ -10,7 +10,7 @@ namespace jimmysmod.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Bulldog");
-			Tooltip.SetDefault("Five round burst\nOnly the first shot consumes ammo");
+			Tooltip.SetDefault("Fires a five round burst and a homing rocket");
 		}
 
 		public override void SetDefaults()

@@ -5,11 +5,11 @@ using Microsoft.Xna.Framework;
 
 namespace jimmysmod.Items
 {
-	public class Enfield : ModItem
+	public class ChlorophyteLongrifle : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Enfield");
+			DisplayName.SetDefault("ChlorophyteLongrifle");
 			Tooltip.SetDefault("Fires a powerful, high velocity bullet");
 		}
 
