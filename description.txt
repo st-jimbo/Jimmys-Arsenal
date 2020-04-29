@@ -1,3 +1,10 @@
+1.0.7 Changelog:
+    - Added Chlorophyte Longrifle, Marksman Rifle, The Liberator, Bulldog
+    - Buffed SCAR-H and M2 Browning slightly
+    - Enfield no longer purchasable, now crafted with musket
+    - Trench Gun recipe adjusted to post-Skeletron
+    - Changed Hellfire Typewriter firing sound
+
 Adds a bunch of new weapons to supplement progression as well as some buffs to vanilla gear.
 
 Buffs:
