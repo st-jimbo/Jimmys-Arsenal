@@ -10,7 +10,7 @@ namespace jimmysmod.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Trench Sweeper");
-            Tooltip.SetDefault("Fires a spread of pellets\n");
+            Tooltip.SetDefault("Hold the trigger and watch everything in the room turn into ketchup");
         }
 
         public override void SetDefaults()

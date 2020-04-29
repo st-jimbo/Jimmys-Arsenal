@@ -9,19 +9,19 @@ namespace jimmysmod.Items
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("This Machine");
-			Tooltip.SetDefault("Ping");
+			DisplayName.SetDefault("Marksman Rifle");
+			Tooltip.SetDefault("Bridging the gap between assault and sniper rifle");
 		}
 
 		public override void SetDefaults()
 		{
-			item.damage = 74;
+			item.damage = 86;
             item.crit = 8;
 			item.ranged = true;
-			item.width = 74;
-			item.height = 18;
-			item.useTime = 22;
-			item.useAnimation = 22;
+			item.width = 80;
+			item.height = 20;
+			item.useTime = 18;
+			item.useAnimation = 18;
 			item.useStyle = 5;
 			item.noMelee = true;
 			item.knockBack = 5f;
