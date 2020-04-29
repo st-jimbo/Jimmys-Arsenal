@@ -3,7 +3,7 @@ using Terraria.ModLoader;
 using Terraria;
 using Microsoft.Xna.Framework;
 
-namespace jimmysmod.Items
+namespace jimmysmod.Items.MetalWeapons
 {
 	public class ChlorophyteLongrifle : ModItem
 	{
