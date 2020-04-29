@@ -10,7 +10,7 @@ namespace jimmysmod.Items.MetalWeapons
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Chlorophyte Longrifle");
-			Tooltip.SetDefault("Fires a powerful crystal leaf");
+			Tooltip.SetDefault("Also fires a powerful crystal leaf");
 		}
 
 		public override void SetDefaults()
