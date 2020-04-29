@@ -9,13 +9,13 @@ namespace jimmysmod.Items
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("TheLiberator");
-			Tooltip.SetDefault("Also fires a vortex laser");
+			DisplayName.SetDefault("The Liberator");
+			Tooltip.SetDefault("Also fires a piercing vortex laser");
 		}
 
 		public override void SetDefaults()
 		{
-			item.damage = 156;
+			item.damage = 152;
             item.crit = 14;
 			item.ranged = true;
 			item.width = 82;
@@ -46,6 +46,9 @@ namespace jimmysmod.Items
 
 		public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
 		{
+			// Secondary Projectile
+			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, mod.ProjectileType("VortexLaser"), damage, knockBack, player.whoAmI);
+			Main.PlaySound(SoundID.Item72, player.Center);
 			// Change bullet type
 			if (type == ProjectileID.Bullet)
 			{
@@ -57,7 +60,7 @@ namespace jimmysmod.Items
 		// Change hold position
 		public override Vector2? HoldoutOffset()
 		{
-			return new Vector2(-12, 1);
+			return new Vector2(-12, 0);
 		}
 	}
 }
