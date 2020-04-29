@@ -16,7 +16,7 @@ namespace jimmysmod.Items.MetalWeapons
 		public override void SetDefaults()
 		{
 			item.damage = 120;
-            item.crit = 8;
+            item.crit = 11;
 			item.ranged = true;
 			item.width = 72;
 			item.height = 18;
