@@ -15,13 +15,13 @@ namespace jimmysmod.Items
 
 		public override void SetDefaults()
 		{
-			item.damage = 180;
+			item.damage = 184;
             item.crit = 2;
 			item.ranged = true;
 			item.width = 80;
 			item.height = 24;
-			item.useTime = 14;
-			item.useAnimation = 14;
+			item.useTime = 13;
+			item.useAnimation = 13;
 			item.useStyle = 5;
 			item.noMelee = true;
 			item.knockBack = 3.5f;

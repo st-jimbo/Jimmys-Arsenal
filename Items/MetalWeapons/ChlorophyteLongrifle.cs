@@ -24,7 +24,7 @@ namespace jimmysmod.Items.MetalWeapons
 			item.useAnimation = 30;
 			item.useStyle = 5;
 			item.noMelee = true;
-			item.knockBack = 5.5f;
+			item.knockBack = 6.5f;
 			item.value = Item.sellPrice(gold: 5);
 			item.rare = 7;
             item.UseSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/BoltAction2");

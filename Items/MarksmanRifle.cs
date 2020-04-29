@@ -15,19 +15,19 @@ namespace jimmysmod.Items
 
 		public override void SetDefaults()
 		{
-			item.damage = 86;
+			item.damage = 142;
             item.crit = 8;
 			item.ranged = true;
 			item.width = 80;
 			item.height = 20;
-			item.useTime = 18;
-			item.useAnimation = 18;
+			item.useTime = 24;
+			item.useAnimation = 24;
 			item.useStyle = 5;
 			item.noMelee = true;
-			item.knockBack = 5f;
+			item.knockBack = 4.5f;
 			item.value = Item.sellPrice(gold: 25);
 			item.rare = 8;
-            item.UseSound = SoundID.Item41;
+            item.UseSound = SoundID.Item40;
             item.autoReuse = true;
 			item.shoot = 10;
 			item.shootSpeed = 22f;
@@ -58,7 +58,7 @@ namespace jimmysmod.Items
 		// Change hold position
 		public override Vector2? HoldoutOffset()
 		{
-			return new Vector2(-9, 0);
+			return new Vector2(-12, 1);
 		}
 	}
 }
