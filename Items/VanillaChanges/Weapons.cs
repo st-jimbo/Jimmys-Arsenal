@@ -9,6 +9,7 @@ namespace jimmysmod.Items.VanillaChanges
     {
         public override void SetDefaults(Item item)
         {
+            Mod Calamity = ModLoader.GetMod("CalamityMod");
             // Brand of the Inferno
             if (item.type == ItemID.DD2SquireDemonSword)
             {
@@ -42,14 +43,14 @@ namespace jimmysmod.Items.VanillaChanges
             }
 
             // Cobalt Sword
-            if (item.type == ItemID.CobaltSword)
+            if (item.type == ItemID.CobaltSword && Calamity != null)
             {
                 item.damage = 55; // From 39
                 item.knockBack = 4.75f; // From 3.85
             }
 
             // Palladium Sword
-            if (item.type == ItemID.PalladiumSword)
+            if (item.type == ItemID.PalladiumSword && Calamity != null)
             {
                 item.damage = 55; // From 41
                 item.useTime = 23; // From 25
@@ -57,19 +58,19 @@ namespace jimmysmod.Items.VanillaChanges
             }
 
             // Mythril Sword
-            if (item.type == ItemID.MythrilSword)
+            if (item.type == ItemID.MythrilSword && Calamity != null)
             {
                 item.damage = 63; // From 44
             }
 
             // Orichalcum Sword
-            if (item.type == ItemID.OrichalcumSword)
+            if (item.type == ItemID.OrichalcumSword && Calamity != null)
             {
                 item.damage = 63; // From 47
             }
 
             // Adamantite Sword
-            if (item.type == ItemID.AdamantiteSword)
+            if (item.type == ItemID.AdamantiteSword && Calamity != null)
             {
                 item.damage = 70; // From 50
                 item.useTime = 26; // From 27
@@ -77,20 +78,20 @@ namespace jimmysmod.Items.VanillaChanges
             }
 
             // Titanium Sword
-            if (item.type == ItemID.TitaniumSword)
+            if (item.type == ItemID.TitaniumSword && Calamity != null)
             {
                 item.damage = 70; // From 52
             }
 
             // Spears //
             // Dark Lance
-            if (item.type == ItemID.DarkLance)
+            if (item.type == ItemID.DarkLance && Calamity != null)
             {
-                item.damage = 41; // From 29
+                item.damage = 36; // From 29
             }
 
             // Cobalt Spear
-            if (item.type == ItemID.CobaltNaginata)
+            if (item.type == ItemID.CobaltNaginata && Calamity != null)
             {
                 item.damage = 45; // From 29
                 item.knockBack = 4.5f; // From 4
@@ -99,13 +100,13 @@ namespace jimmysmod.Items.VanillaChanges
             }
 
             // Palladium Spear
-            if (item.type == ItemID.PalladiumPike)
+            if (item.type == ItemID.PalladiumPike && Calamity != null)
             {
-                item.damage = 45; // From 44
+                item.damage = 45; // From 32
             }
 
             // Mythril Spear
-            if (item.type == ItemID.MythrilHalberd)
+            if (item.type == ItemID.MythrilHalberd && Calamity != null)
             {
                 item.damage = 50; // From 35
                 item.knockBack = 5.5f; // From 5
@@ -114,13 +115,13 @@ namespace jimmysmod.Items.VanillaChanges
             }
 
             // Orichalcum Spear
-            if (item.type == ItemID.OrichalcumHalberd)
+            if (item.type == ItemID.OrichalcumHalberd && Calamity != null)
             {
                 item.damage = 50; // From 36
             }
 
             // Adamantite Spear
-            if (item.type == ItemID.AdamantiteGlaive)
+            if (item.type == ItemID.AdamantiteGlaive && Calamity != null)
             {
                 item.damage = 56; // From 38
                 item.knockBack = 6.2f; // From 6
@@ -129,7 +130,7 @@ namespace jimmysmod.Items.VanillaChanges
             }
 
             // Titanium Spear
-            if (item.type == ItemID.TitaniumTrident)
+            if (item.type == ItemID.TitaniumTrident && Calamity != null)
             {
                 item.damage = 56; // From 40
             }

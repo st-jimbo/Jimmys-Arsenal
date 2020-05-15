@@ -1,18 +1,14 @@
-1.0.7 Changelog:
-    - Added Chlorophyte Longrifle, Marksman Rifle, The Liberator, Bulldog
-    - Buffed SCAR-H and M2 Browning slightly
-    - Enfield no longer purchasable, now crafted with musket
-    - Trench Gun recipe adjusted to post-Skeletron
-    - Changed Hellfire Typewriter firing sound
+1.0.8 Changelog:
+    - Hardmode metal buffs (except axes and repeaters) are now only active if Calamity is loaded.
 
 Adds a bunch of new weapons to supplement progression as well as some buffs to vanilla gear.
 
 Buffs:
-    - Hardmode ore swords have their damage increased by 35%
-    - Hardmore ore spears and the Dark Lance have their damage increased by 40%
-    - Hardmore ore axes have their damage doubled
-    - Hardmore ore repeaters have their damage increased by 25%
-    - Original hardmode metals are now equal to the alternative metals, because there was no reason for one to be superior to the other.
+    - If Calamity is loaded:
+        - Hardmode metal swords have their damage increased by 35%
+        - Hardmore metal spears and the Dark Lance have their damage increased by 40%
+    - Hardmore metal and Hallowed repeaters have their damage increased by 25%
+    - Hardmore metal axes have their damage doubled
     - Chlorophyte swords, shotbow, axe, hammer, drill, and pickaxe buffed
     - Starfury, Flintlock, Brand of the Inferno, Flying Dragon, and Phantom Phoenix buffed
     - Pearlwood armor significantly buffed, gives increased life regen, max health, and max mana
