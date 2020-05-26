@@ -1,5 +1,6 @@
-1.0.8 Changelog:
-    - Hardmode metal buffs (except axes and repeaters) are now only active if Calamity is loaded.
+1.1 Changelog:
+    - Added Akimbo weapons
+    - Redid Phantom Phoenix and Brand of the Inferno buffs to match their 1.4 buffs
 
 Adds a bunch of new weapons to supplement progression as well as some buffs to vanilla gear.
 

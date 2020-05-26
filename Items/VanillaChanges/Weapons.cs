@@ -13,7 +13,7 @@ namespace jimmysmod.Items.VanillaChanges
             // Brand of the Inferno
             if (item.type == ItemID.DD2SquireDemonSword)
             {
-                item.damage = 64; // From 44
+                item.damage = 85; // From 44
             }
 
             // Flying Dragon
@@ -25,7 +25,7 @@ namespace jimmysmod.Items.VanillaChanges
             // Starfury
             if (item.type == ItemID.Starfury)
             {
-                item.damage = 30; // From 22
+                item.damage = 28; // From 22
                 item.autoReuse = true; // From false
             }
 
@@ -39,7 +39,8 @@ namespace jimmysmod.Items.VanillaChanges
             // Phantom Phoenix
             if (item.type == ItemID.DD2PhoenixBow)
             {
-                item.damage = 38; // From 24
+                item.damage = 32; // From 24
+                item.useTime = 18; // From 18
             }
 
             // Cobalt Sword
