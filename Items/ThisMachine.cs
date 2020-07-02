@@ -12,7 +12,7 @@ namespace jimmysmod.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("This Machine");
-			Tooltip.SetDefault("Ping");
+			Tooltip.SetDefault("Ping!");
 		}
 
 		public override void SetDefaults()
