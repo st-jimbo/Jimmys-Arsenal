@@ -32,6 +32,8 @@ namespace jimmysmod
             {
                 shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Ammo.DepletedUranium>());
                 nextSlot++;
+                shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Materials.AkimboBookT2>());
+                nextSlot++;
             }
             if (type == NPCID.ArmsDealer && NPC.downedPlantBoss) // after plantera
             {
