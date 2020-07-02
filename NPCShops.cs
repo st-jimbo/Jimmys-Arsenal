@@ -11,13 +11,16 @@ namespace jimmysmod
         {
             if (type == NPCID.ArmsDealer)  // always available
             {
+                shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Ammo.FMJ>());
+                nextSlot++;
+
                 shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.LewisGun>());
                 nextSlot++;
 
                 shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.SMG>());
                 nextSlot++;
 
-                shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Ammo.FMJ>());
+                shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Materials.AkimboBookT1>());
                 nextSlot++;
             }
             if (type == NPCID.ArmsDealer && NPC.downedBoss3) // after skeletron
