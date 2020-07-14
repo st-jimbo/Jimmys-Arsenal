@@ -4,10 +4,11 @@ using Terraria;
 
 namespace jimmysmod.Items.VanillaChanges
 {
-    public class MetalWeapons : GlobalItem
+    public class HMMetalWeapons : GlobalItem
     {
         public override void SetDefaults(Item item)
         {
+            // Swords //
             Mod Calamity = ModLoader.GetMod("CalamityMod");
             // Cobalt Sword
             if (item.type == ItemID.CobaltSword && Calamity != null)
@@ -185,5 +186,6 @@ namespace jimmysmod.Items.VanillaChanges
             {
                 item.damage = 54; // From 43
             }
+        }
     }
 }
