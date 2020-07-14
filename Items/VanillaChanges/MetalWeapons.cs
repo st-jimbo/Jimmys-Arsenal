@@ -4,87 +4,186 @@ using Terraria;
 
 namespace jimmysmod.Items.VanillaChanges
 {
-    public class Chlorophyte : GlobalItem
+    public class MetalWeapons : GlobalItem
     {
         public override void SetDefaults(Item item)
         {
-            // Chlorophyte Claymore
-            if (item.type == ItemID.ChlorophyteClaymore)
+            Mod Calamity = ModLoader.GetMod("CalamityMod");
+            // Cobalt Sword
+            if (item.type == ItemID.CobaltSword && Calamity != null)
             {
-                item.damage = 100; // From 75
-                item.autoReuse = true; // From false
+                item.damage = 55; // From 39
+                item.knockBack = 4.75f; // From 3.85
             }
 
-            // Chlorophyte Saber
-            if (item.type == ItemID.ChlorophyteSaber)
+            // Palladium Sword
+            if (item.type == ItemID.PalladiumSword && Calamity != null)
             {
-                item.damage = 60; // From 48
+                item.damage = 55; // From 41
+                item.useTime = 23; // From 25
+                item.useAnimation = 23; // From 25
             }
 
-            // Chlorophyte Partisan
-            if (item.type == ItemID.ChlorophytePartisan)
+            // Mythril Sword
+            if (item.type == ItemID.MythrilSword && Calamity != null)
             {
-                item.damage = 58; // From 49
+                item.damage = 63; // From 44
             }
 
-            // Chlorophyte Shotbow
-            if (item.type == ItemID.ChlorophyteShotbow)
+            // Orichalcum Sword
+            if (item.type == ItemID.OrichalcumSword && Calamity != null)
+            {
+                item.damage = 63; // From 47
+            }
+
+            // Adamantite Sword
+            if (item.type == ItemID.AdamantiteSword && Calamity != null)
+            {
+                item.damage = 70; // From 50
+                item.useTime = 26; // From 27
+                item.useAnimation = 26; // From 27
+            }
+
+            // Titanium Sword
+            if (item.type == ItemID.TitaniumSword && Calamity != null)
+            {
+                item.damage = 70; // From 52
+            }
+
+            // Spears //
+            // Dark Lance
+            if (item.type == ItemID.DarkLance && Calamity != null)
+            {
+                item.damage = 36; // From 29
+            }
+
+            // Cobalt Spear
+            if (item.type == ItemID.CobaltNaginata && Calamity != null)
+            {
+                item.damage = 45; // From 29
+                item.knockBack = 4.5f; // From 4
+                item.useTime = 27; // From 28
+                item.useAnimation = 27; // From 28
+            }
+
+            // Palladium Spear
+            if (item.type == ItemID.PalladiumPike && Calamity != null)
+            {
+                item.damage = 45; // From 32
+            }
+
+            // Mythril Spear
+            if (item.type == ItemID.MythrilHalberd && Calamity != null)
+            {
+                item.damage = 50; // From 35
+                item.knockBack = 5.5f; // From 5
+                item.useTime = 25; // From 26
+                item.useAnimation = 25; // From 26
+            }
+
+            // Orichalcum Spear
+            if (item.type == ItemID.OrichalcumHalberd && Calamity != null)
+            {
+                item.damage = 50; // From 36
+            }
+
+            // Adamantite Spear
+            if (item.type == ItemID.AdamantiteGlaive && Calamity != null)
+            {
+                item.damage = 56; // From 38
+                item.knockBack = 6.2f; // From 6
+                item.useTime = 23; // From 25
+                item.useAnimation = 23; // From 25
+            }
+
+            // Titanium Spear
+            if (item.type == ItemID.TitaniumTrident && Calamity != null)
+            {
+                item.damage = 56; // From 40
+            }
+
+            // Axes //
+            // Cobalt Axe
+            if (item.type == ItemID.CobaltWaraxe)
+            {
+                item.damage = 72; // From 33
+                item.knockBack = 5.5f; // From 5
+            }
+
+            // Palladium Axe
+            if (item.type == ItemID.PalladiumWaraxe)
+            {
+                item.damage = 72; // From 36
+            }
+
+            // Mythril Axe
+            if (item.type == ItemID.MythrilWaraxe)
+            {
+                item.damage = 82; // From 39
+                item.knockBack = 6.5f; // From 6
+            }
+
+            // Orichalcum Axe
+            if (item.type == ItemID.OrichalcumWaraxe)
+            {
+                item.damage = 82; // From 41
+            }
+
+            // Adamantite Axe
+            if (item.type == ItemID.AdamantiteWaraxe)
+            {
+                item.damage = 88; // From 43
+                item.knockBack = 7.5f; // From 7
+            }
+
+            // Titanium Axe
+            if (item.type == ItemID.TitaniumWaraxe)
+            {
+                item.damage = 88; // From 44
+            }
+
+            // Repeaters //
+            // Cobalt Repeater
+            if (item.type == ItemID.CobaltRepeater)
+            {
+                item.damage = 43; // From 32
+                item.knockBack = 1.75f; // From 1.5
+            }
+
+            // Palladium Repeater
+            if (item.type == ItemID.PalladiumRepeater)
             {
                 item.damage = 43; // From 34
             }
 
-            // Chlorophyte Greataxe
-            if (item.type == ItemID.ChlorophyteGreataxe)
+            // Mythril Repeater
+            if (item.type == ItemID.MythrilRepeater)
             {
-                item.damage = 95; // From 70
+                item.damage = 48; // From 36
             }
 
-            // Chlorophyte Warhammer
-            if (item.type == ItemID.ChlorophyteWarhammer)
+            // Orichalcum Repeater
+            if (item.type == ItemID.OrichalcumRepeater)
             {
-                item.damage = 110; // From 80
+                item.damage = 48; // From 38
             }
 
-            // Chlorophyte Pickaxe
-            if (item.type == ItemID.ChlorophytePickaxe)
+            // Adamantite Repeater
+            if (item.type == ItemID.AdamantiteRepeater)
             {
-                item.damage = 50; // From 40
-                item.useTime = 6; // From 7
-                item.useAnimation = 20; // From 25
+                item.damage = 51; // From 40
             }
 
-            // Chlorophyte Drill
-            if (item.type == ItemID.ChlorophyteDrill)
+            // Titanium Repeater
+            if (item.type == ItemID.TitaniumRepeater)
             {
-                item.damage = 45; // From 35
-                item.useTime = 6; // From 7
-                item.useAnimation = 20; // From 25
+                item.damage = 51; // From 41
             }
-        }
 
-		public static void ExampleRecipeEditing(Mod mod) // Chlorophyte Bullet Recipe
-        {
-            RecipeFinder finder = new RecipeFinder();
-			finder.AddIngredient(ItemID.MusketBall, 70);
-			finder.AddIngredient(ItemID.ChlorophyteBar, 1);
-			finder.AddTile(TileID.MythrilAnvil);
-			finder.SetResult(ItemID.ChlorophyteBullet, 70);
-			Recipe exactRecipe = finder.FindExactRecipe();
-
-			bool isRecipeFound = exactRecipe != null;
-			if (isRecipeFound)
-			{
-				RecipeEditor editor = new RecipeEditor(exactRecipe);
-				editor.DeleteRecipe();
-			}
-        }
-        public override void AddRecipes()
-        {
-            ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.ChlorophyteBar, 1);
-            recipe.AddTile(TileID.MythrilAnvil);
-            recipe.SetResult(ItemID.ChlorophyteBullet, 250);
-            recipe.AddRecipe();
-        }
+            // Hallowed Repeater
+            if (item.type == ItemID.HallowedRepeater)
+            {
+                item.damage = 54; // From 43
+            }
     }
 }
