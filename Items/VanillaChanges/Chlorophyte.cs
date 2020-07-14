@@ -1,7 +1,6 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
-using Microsoft.Xna.Framework;
 
 namespace jimmysmod.Items.VanillaChanges
 {
@@ -61,31 +60,6 @@ namespace jimmysmod.Items.VanillaChanges
                 item.useTime = 6; // From 7
                 item.useAnimation = 20; // From 25
             }
-        }
-
-		public static void ExampleRecipeEditing(Mod mod) // Chlorophyte Bullet Recipe
-        {
-            RecipeFinder finder = new RecipeFinder();
-			finder.AddIngredient(ItemID.MusketBall, 70);
-			finder.AddIngredient(ItemID.ChlorophyteBar, 1);
-			finder.AddTile(TileID.MythrilAnvil);
-			finder.SetResult(ItemID.ChlorophyteBullet, 70);
-			Recipe exactRecipe = finder.FindExactRecipe();
-
-			bool isRecipeFound = exactRecipe != null;
-			if (isRecipeFound)
-			{
-				RecipeEditor editor = new RecipeEditor(exactRecipe);
-				editor.DeleteRecipe();
-			}
-        }
-        public override void AddRecipes()
-        {
-            ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.ChlorophyteBar, 1);
-            recipe.AddTile(TileID.MythrilAnvil);
-            recipe.SetResult(ItemID.ChlorophyteBullet, 250);
-            recipe.AddRecipe();
         }
     }
 }
