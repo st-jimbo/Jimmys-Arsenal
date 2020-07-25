@@ -1,6 +1,8 @@
-1.1 Changelog:
-    - Added Akimbo weapons. Fires twice at fast in exchange for some accuracy.
-    - Redid Phantom Phoenix and Brand of the Inferno buffs to match their 1.4 buffs
+1.1.1 Changelog:
+    - Added two Pre-Hardmode flamethrowers
+    - Added Luminite Chasers
+    - Buffed Pre-Hardmode metal swords and classic metal bows
+    - Updated sprites for a bunch of weapons
 
 Adds a bunch of new weapons to supplement progression as well as some buffs to vanilla gear.
 Vanilla rebalance buffs will eventually be moved to its own mod.
@@ -8,9 +10,10 @@ Vanilla rebalance buffs will eventually be moved to its own mod.
 Buffs:
     - If Calamity is loaded:
         - Hardmode metal swords have their damage increased by 35%
-        - Hardmore metal spears and the Dark Lance have their damage increased by 40%
-    - Hardmore metal and Hallowed repeaters have their damage increased by 25%
-    - Hardmore metal axes have their damage doubled
+        - Hardmode metal spears and the Dark Lance have their damage increased by 40%
+    - Hardmode metal repeaters and the Hallowed Repeater have their damage increased by 25%
+    - Hardmode metal axes have their damage doubled
+    - Pre-Hardmode metal swords have their damage and size increased, with Gold and Platinum broadswords given auto-swing
     - Chlorophyte swords, shotbow, axe, hammer, drill, and pickaxe buffed
     - Starfury, Flintlock, Brand of the Inferno, Flying Dragon, and Phantom Phoenix buffed
     - Pearlwood armor significantly buffed, gives increased life regen, max health, and max mana
