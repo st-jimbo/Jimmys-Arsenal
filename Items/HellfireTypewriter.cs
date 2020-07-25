@@ -10,7 +10,7 @@ namespace jimmysmod.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Hellfire Typewriter");
-			Tooltip.SetDefault("Right click to launch napalm\n33% chance to not consume ammo");
+			Tooltip.SetDefault("Right click to fire napalm\n33% chance to not consume ammo");
 		}
 
 		public override void SetDefaults()
