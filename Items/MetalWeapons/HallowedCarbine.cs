@@ -17,7 +17,7 @@ namespace jimmysmod.Items.MetalWeapons
         {
             item.damage = 46;
             item.ranged = true;
-            item.width = 58;
+            item.width = 62;
             item.height = 24;
             item.useAnimation = 8; // burst fire
             item.useTime = 4;
