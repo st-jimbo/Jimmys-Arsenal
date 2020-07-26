@@ -56,7 +56,7 @@ namespace jimmysmod.Items.MetalWeapons
         // Sound for each shot
         public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
 		{
-            Main.PlaySound(mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/AR2"), player.Center);
+            Main.PlaySound(mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/AR"), player.Center);
             //Main.PlaySound(SoundID.Item11, player.Center);
             return true;
 		}

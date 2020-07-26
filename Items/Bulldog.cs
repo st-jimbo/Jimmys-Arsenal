@@ -44,7 +44,7 @@ namespace jimmysmod.Items
             }
 
             // Sound for each shot
-            Main.PlaySound(mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/AR2"), player.Center);
+            Main.PlaySound(mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/AR"), player.Center);
             //Main.PlaySound(SoundID.Item11, player.Center);
 
             return true;
