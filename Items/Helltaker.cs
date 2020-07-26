@@ -15,12 +15,12 @@ namespace jimmysmod.Items
 
 		public override void SetDefaults()
 		{
-			item.damage = 25;
+			item.damage = 28;
 			item.ranged = true;
 			item.width = 62;
 			item.height = 20;
-            item.useTime = 15;
-			item.useAnimation = 30;
+            item.useTime = 14;
+			item.useAnimation = 28;
 			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.noMelee = true;
 			item.knockBack = 5.5f;
@@ -29,7 +29,7 @@ namespace jimmysmod.Items
             item.UseSound = SoundID.Item34;
             item.autoReuse = true;
 			item.shoot = ProjectileID.Flames;
-			item.shootSpeed = 8.5f;
+			item.shootSpeed = 9f;
 			item.useAmmo = AmmoID.Gel;
 		}
 
