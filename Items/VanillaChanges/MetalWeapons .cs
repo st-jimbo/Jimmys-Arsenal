@@ -91,7 +91,7 @@ namespace jimmysmod.Items.VanillaChanges
             if (item.type == ItemID.TinShortsword)
             {
                 item.damage = 10;
-                item.scale = 1.3f;
+                item.scale = 1.15f;
                 item.autoReuse = true;
             }
 
@@ -99,7 +99,7 @@ namespace jimmysmod.Items.VanillaChanges
             if (item.type == ItemID.LeadShortsword)
             {
                 item.damage = 12;
-                item.scale = 1.3f;
+                item.scale = 1.15f;
                 item.autoReuse = true;
             }
 
@@ -107,7 +107,7 @@ namespace jimmysmod.Items.VanillaChanges
             if (item.type == ItemID.TungstenShortsword)
             {
                 item.damage = 13;
-                item.scale = 1.3f;
+                item.scale = 1.15f;
                 item.autoReuse = true;
             }
 
@@ -115,7 +115,7 @@ namespace jimmysmod.Items.VanillaChanges
             if (item.type == ItemID.PlatinumShortsword)
             {
                 item.damage = 16;
-                item.scale = 1.3f;
+                item.scale = 1.15f;
                 item.autoReuse = true;
             }
 
