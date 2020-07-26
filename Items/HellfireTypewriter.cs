@@ -87,7 +87,7 @@ namespace jimmysmod.Items
 		// Change hold position
 		public override Vector2? HoldoutOffset()
 		{
-			return new Vector2(-6, 1);
+			return new Vector2(-10, 1);
 		}
 		
 		// Chance to not use ammo
