@@ -19,8 +19,8 @@ namespace jimmysmod.Items
 			item.ranged = true;
 			item.width = 62;
 			item.height = 20;
-            item.useTime = 8;
-			item.useAnimation = 24;
+            item.useTime = 10;
+			item.useAnimation = 30;
 			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.noMelee = true;
 			item.knockBack = 0f;
@@ -47,10 +47,10 @@ namespace jimmysmod.Items
 		// Shotgun
 		public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
 		{
-			int numberProjectiles = 4; // amount of shots
+			int numberProjectiles = 3; // amount of shots
 			for (int i = 0; i < numberProjectiles; i++)
 			{
-				Vector2 perturbedSpeed = new Vector2(speedX, speedY).RotatedByRandom(MathHelper.ToRadians(20));
+				Vector2 perturbedSpeed = new Vector2(speedX, speedY).RotatedByRandom(MathHelper.ToRadians(30));
 				Projectile.NewProjectile(position.X, position.Y, perturbedSpeed.X, perturbedSpeed.Y, type, damage, knockBack, player.whoAmI);
 			}
 			return false;

@@ -19,17 +19,17 @@ namespace jimmysmod.Items
 			item.ranged = true;
 			item.width = 62;
 			item.height = 20;
-            item.useTime = 12;
-			item.useAnimation = 24;
+            item.useTime = 15;
+			item.useAnimation = 30;
 			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.noMelee = true;
-			item.knockBack = 4f;
+			item.knockBack = 5.5f;
 			item.value = Item.sellPrice(silver: 54);
 			item.rare = ItemRarityID.Orange;
             item.UseSound = SoundID.Item34;
             item.autoReuse = true;
 			item.shoot = ProjectileID.Flames;
-			item.shootSpeed = 8f;
+			item.shootSpeed = 8.5f;
 			item.useAmmo = AmmoID.Gel;
 		}
 
