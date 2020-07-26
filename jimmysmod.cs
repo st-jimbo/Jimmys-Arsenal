@@ -32,7 +32,7 @@ namespace jimmysmod
 				ItemID.CopperBar,
 				ItemID.TinBar
 			});
-			RecipeGroup.RegisterGroup("jimmysmod:Mythril", group2);
+			RecipeGroup.RegisterGroup("jimmysmod:Copper", group2);
 		}
 	}
 }
