@@ -21,7 +21,7 @@ namespace jimmysmod.Items.MetalWeapons
             item.height = 26;
             item.useTime = 16;
             item.useAnimation = 16;
-            item.useStyle = 5;
+            item.useStyle = ItemUseStyleID.HoldingOut;
             item.noMelee = true;
             item.knockBack = 5;
             item.value = 150000;

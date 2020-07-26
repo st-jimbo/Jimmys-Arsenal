@@ -22,7 +22,7 @@ namespace jimmysmod.Items
             item.useAnimation = 20; // burst fire
             item.useTime = 4;
             item.reuseDelay = 16;
-            item.useStyle = 5;
+            item.useStyle = ItemUseStyleID.HoldingOut;
 			item.noMelee = true;
 			item.knockBack = 1.5f;
             item.value = Item.sellPrice(gold: 20);

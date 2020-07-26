@@ -22,7 +22,7 @@ namespace jimmysmod.Items.MetalWeapons
             item.scale = 0.85f;
             item.useTime = 8;
             item.useAnimation = 8;
-            item.useStyle = 5;
+            item.useStyle = ItemUseStyleID.HoldingOut;
             item.noMelee = true;
             item.knockBack = 0;
             item.value = 60000;

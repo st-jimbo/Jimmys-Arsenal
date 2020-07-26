@@ -21,7 +21,7 @@ namespace jimmysmod.Items
 			item.height = 28;
 			item.useTime = 7;
 			item.useAnimation = 7;
-			item.useStyle = 5;
+			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.noMelee = true;
 			item.knockBack = 1.25f;
 			item.value = 500000;

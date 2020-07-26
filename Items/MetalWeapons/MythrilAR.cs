@@ -22,7 +22,7 @@ namespace jimmysmod.Items.MetalWeapons
             item.useAnimation = 18; // burst fire
             item.useTime = 6;
             item.reuseDelay = 21;
-            item.useStyle = 5;
+            item.useStyle = ItemUseStyleID.HoldingOut;
             item.noMelee = true;
             item.knockBack = 1f;
             item.value = 90000;
