@@ -3,6 +3,7 @@
     - Added Luminite Chasers
     - Buffed Pre-Hardmode metal swords and classic metal bows
     - Buffed vanilla flamethrowers
+    - Buffed Muramasa back to its former glory
     - Updated sprites for a bunch of weapons
     - Changed some stats
 
@@ -17,6 +18,6 @@ Buffs:
     - Hardmode metal axes have their damage doubled
     - Pre-Hardmode metal swords have their damage and size increased, with Gold and Platinum broadswords as well as all shortswords given auto-swing
     - Chlorophyte swords, shotbow, axe, hammer, drill, and pickaxe buffed
-    - Starfury, Flintlock, Brand of the Inferno, Flying Dragon, and Phantom Phoenix buffed
+    - Starfury, Flintlock, Brand of the Inferno, Flying Dragon, Phantom Phoenix, and Muramasa buffed
     - Flamethrower and Elf Melter buffed
     - Pearlwood armor significantly buffed, gives increased life regen, max health, and max mana

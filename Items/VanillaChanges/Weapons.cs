@@ -27,6 +27,13 @@ namespace jimmysmod.Items.VanillaChanges
                 item.autoReuse = true; // From false
             }
 
+            // Muramasa
+            if (item.type == ItemID.Muramasa)
+            {
+                item.damage = 22; // From 19
+                item.knockBack = 3f; // From 2.5f
+            }
+
             // Flintlock
             if (item.type == ItemID.FlintlockPistol)
             {
