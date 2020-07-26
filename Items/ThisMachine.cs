@@ -31,7 +31,7 @@ namespace jimmysmod.Items
 			item.rare = 4;
             item.UseSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/Rifle");
             //item.UseSound = SoundID.Item41;
-            item.autoReuse = false;
+            item.autoReuse = true;
 			item.shoot = 10;
 			item.shootSpeed = 22f;
 			item.useAmmo = AmmoID.Bullet;

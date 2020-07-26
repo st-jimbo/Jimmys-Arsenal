@@ -3,6 +3,7 @@
     - Added Luminite Chasers
     - Buffed Pre-Hardmode metal swords and classic metal bows
     - Updated sprites for a bunch of weapons
+    - Changed some stats
 
 Adds a bunch of new weapons to supplement progression as well as some buffs to vanilla gear.
 Vanilla rebalance buffs will eventually be moved to its own mod.
