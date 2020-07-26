@@ -27,9 +27,9 @@ namespace jimmysmod.Items
 			item.knockBack = 3.5f;
 			item.value = 1000000;
 			item.rare = 10;
-            item.UseSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/AR2");
-            //item.UseSound = SoundID.Item11;
-            item.autoReuse = true;
+			item.UseSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/AR");
+			//item.UseSound = SoundID.Item11;
+			item.autoReuse = true;
 			item.shoot = 10;
 			item.shootSpeed = 27f;
 			item.useAmmo = AmmoID.Bullet;

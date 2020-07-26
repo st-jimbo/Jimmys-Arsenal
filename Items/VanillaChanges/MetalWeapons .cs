@@ -93,6 +93,7 @@ namespace jimmysmod.Items.VanillaChanges
                 item.damage = 10;
                 item.scale = 1.15f;
                 item.autoReuse = true;
+                item.useTurn = false;
             }
 
             // Lead Shortsword
@@ -101,6 +102,7 @@ namespace jimmysmod.Items.VanillaChanges
                 item.damage = 12;
                 item.scale = 1.15f;
                 item.autoReuse = true;
+                item.useTurn = false;
             }
 
             // Tungsten Shortsword
@@ -109,6 +111,7 @@ namespace jimmysmod.Items.VanillaChanges
                 item.damage = 13;
                 item.scale = 1.15f;
                 item.autoReuse = true;
+                item.useTurn = false;
             }
 
             // Platinum Shortsword
@@ -117,6 +120,7 @@ namespace jimmysmod.Items.VanillaChanges
                 item.damage = 16;
                 item.scale = 1.15f;
                 item.autoReuse = true;
+                item.useTurn = false;
             }
 
             // Bows //
