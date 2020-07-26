@@ -40,6 +40,18 @@ namespace jimmysmod.Items.VanillaChanges
                 item.damage = 32; // From 24
                 item.useTime = 18; // From 18
             }
+
+            // Flamethrower
+            if (item.type == ItemID.Flamethrower)
+            {
+                item.damage = 40; // From 27
+            }
+
+            // Elf Melter
+            if (item.type == ItemID.EldMelter) // lol
+            {
+                item.damage = 60; // From 40
+            }
         }
     }
 }
