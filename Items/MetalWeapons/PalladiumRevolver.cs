@@ -26,7 +26,7 @@ namespace jimmysmod.Items.MetalWeapons
             item.knockBack = 4;
             item.value = 60000;
             item.rare = 4;
-            item.UseSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/Revolver");
+            item.UseSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/Deagle");
             //item.UseSound = SoundID.Item11;
             item.autoReuse = false;
             item.shoot = 10;
