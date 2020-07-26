@@ -29,7 +29,7 @@ namespace jimmysmod.Items
             item.UseSound = SoundID.Item34;
             item.autoReuse = true;
 			item.shoot = ProjectileID.Flames;
-			item.shootSpeed = 6f;
+			item.shootSpeed = 6.5f;
 			item.useAmmo = AmmoID.Gel;
 		}
 
@@ -50,7 +50,7 @@ namespace jimmysmod.Items
 			int numberProjectiles = 4; // amount of shots
 			for (int i = 0; i < numberProjectiles; i++)
 			{
-				Vector2 perturbedSpeed = new Vector2(speedX, speedY).RotatedByRandom(MathHelper.ToRadians(10));
+				Vector2 perturbedSpeed = new Vector2(speedX, speedY).RotatedByRandom(MathHelper.ToRadians(20));
 				Projectile.NewProjectile(position.X, position.Y, perturbedSpeed.X, perturbedSpeed.Y, type, damage, knockBack, player.whoAmI);
 			}
 			return false;

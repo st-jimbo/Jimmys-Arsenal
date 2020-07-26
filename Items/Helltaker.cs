@@ -23,13 +23,13 @@ namespace jimmysmod.Items
 			item.useAnimation = 24;
 			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.noMelee = true;
-			item.knockBack = 3f;
+			item.knockBack = 4f;
 			item.value = Item.sellPrice(silver: 54);
 			item.rare = ItemRarityID.Orange;
             item.UseSound = SoundID.Item34;
             item.autoReuse = true;
 			item.shoot = ProjectileID.Flames;
-			item.shootSpeed = 6f;
+			item.shootSpeed = 8f;
 			item.useAmmo = AmmoID.Gel;
 		}
 
