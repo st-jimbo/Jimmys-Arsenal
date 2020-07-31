@@ -57,7 +57,7 @@ namespace jimmysmod.Items.VanillaChanges
             // Platinum Broadsword
             if (item.type == ItemID.PlatinumBroadsword)
             {
-                item.damage = 18;
+                item.damage = 17;
                 item.scale = 1.2f;
                 item.autoReuse = true;
             }
@@ -117,7 +117,7 @@ namespace jimmysmod.Items.VanillaChanges
             // Platinum Shortsword
             if (item.type == ItemID.PlatinumShortsword)
             {
-                item.damage = 16;
+                item.damage = 15;
                 item.scale = 1.15f;
                 item.autoReuse = true;
                 item.useTurn = false;
