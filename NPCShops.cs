@@ -35,17 +35,6 @@ namespace jimmysmod
                 shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Materials.AkimboBookT2>());
                 nextSlot++;
             }
-            if (type == NPCID.ArmsDealer && NPC.downedPlantBoss) // after plantera
-            {
-                shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.M1919Shorty>());
-                nextSlot++;
-            }
-            if (type == NPCID.ArmsDealer && NPC.downedGolemBoss) // after golem
-            {
-
-                shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.SCAR>());
-                nextSlot++;
-            }
         }
     }
 }
