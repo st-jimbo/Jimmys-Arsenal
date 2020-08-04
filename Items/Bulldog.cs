@@ -58,10 +58,10 @@ namespace jimmysmod.Items
                 item.damage = 33;
                 item.useAnimation = 9; // burst fire
                 item.useTime = 9;
-                item.reuseDelay = 1;
+                item.reuseDelay = 0;
                 item.UseSound = SoundID.Item72;
                 item.shoot = mod.ProjectileType("VortexLaser");
-                item.useAmmo = AmmoID.Bullet;
+                item.useAmmo = 0;
             }
             // normal stats
             else
