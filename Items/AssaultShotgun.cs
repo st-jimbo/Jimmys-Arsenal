@@ -10,7 +10,7 @@ namespace jimmysmod.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Assault Shotgun");
-            Tooltip.SetDefault("Redefining close quarters combat");
+            Tooltip.SetDefault("Redefining close quarters combat\nRight click to fire a tighter blast");
         }
 
         public override void SetDefaults()
@@ -19,6 +19,7 @@ namespace jimmysmod.Items
             item.ranged = true;
             item.width = 94;
             item.height = 36;
+            item.scale = 0.75f;
             item.useTime = 20;
             item.useAnimation = 20;
             item.useStyle = ItemUseStyleID.HoldingOut;
@@ -39,7 +40,7 @@ namespace jimmysmod.Items
             recipe.AddIngredient(mod.ItemType("TrenchSweeper"));
             recipe.AddIngredient(ItemID.ShroomiteBar, 14);
             recipe.AddIngredient(ItemID.SpectreBar, 10);
-            recipe.AddTile(TileID.Anvils);
+            recipe.AddTile(TileID.MythrilAnvil);
             recipe.SetResult(this);
             recipe.AddRecipe();
         }
@@ -54,8 +55,8 @@ namespace jimmysmod.Items
             // alt stats
             if (player.altFunctionUse == 2)
             {
-                item.useTime = 38;
-                item.useAnimation = 38;
+                item.useTime = 40;
+                item.useAnimation = 40;
                 item.UseSound = SoundID.Item36;
             }
             // normal stats
@@ -77,7 +78,7 @@ namespace jimmysmod.Items
                 int numberProjectiles = 6; // amount of shots
                 for (int i = 0; i < numberProjectiles; i++)
                 {
-                    Vector2 perturbedSpeed = new Vector2(speedX, speedY).RotatedByRandom(MathHelper.ToRadians(2));
+                    Vector2 perturbedSpeed = new Vector2(speedX, speedY).RotatedByRandom(MathHelper.ToRadians(1));
                     Projectile.NewProjectile(position.X, position.Y, perturbedSpeed.X, perturbedSpeed.Y, type, damage, knockBack, player.whoAmI);
                 }
             }
@@ -97,7 +98,7 @@ namespace jimmysmod.Items
         // Change hold position
         public override Vector2? HoldoutOffset()
         {
-            return new Vector2(-10, 1);
+            return new Vector2(-14, 1);
         }
     }
 }
