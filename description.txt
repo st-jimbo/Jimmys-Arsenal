@@ -1,6 +1,6 @@
 1.1.2 Changelog:
     - Reduced gold/platinum sword damage buffs a bit
-    - Buffed Orichalcum Battle Rifle
+    - Buffed Orichalcum Battle Rifle and Bulldog
     - M1919 Beast Mode now dropped by Plantera
     - SCAR now dropped by Sand Elementals after Plantera has been defeated
 
