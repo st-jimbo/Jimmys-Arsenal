@@ -76,6 +76,7 @@ namespace jimmysmod.Items
             // alt
             if (player.altFunctionUse == 2)
             {
+                Main.PlaySound(SoundID.Item72, player.Center);
                 return true;
             }
             // normal
