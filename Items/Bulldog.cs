@@ -10,7 +10,7 @@ namespace jimmysmod.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Bulldog");
-			Tooltip.SetDefault("Fires a five round burst and a homing rocket");
+			Tooltip.SetDefault("Fires a five round burst and a homing rocket\nRight click to rapid fire vortex lasers with reduced damage");
 		}
 
 		public override void SetDefaults()
@@ -35,27 +35,6 @@ namespace jimmysmod.Items
 			item.useAmmo = AmmoID.Bullet;
 		}
 
-        public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
-        {
-            // Secondary Projectile
-            if (player.itemAnimation > item.useAnimation - 2)
-            {
-                Projectile.NewProjectile(position.X, position.Y, speedX/2, speedY/2, ProjectileID.VortexBeaterRocket, damage, knockBack, player.whoAmI);
-            }
-
-            // Sound for each shot
-            Main.PlaySound(mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/AR"), player.Center);
-            //Main.PlaySound(SoundID.Item11, player.Center);
-
-            return true;
-        }
-
-        // Only consume ammo once
-        public override bool ConsumeAmmo(Player player)
-        {
-            return !(player.itemAnimation < item.useAnimation - 2);
-        }
-
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
@@ -64,6 +43,64 @@ namespace jimmysmod.Items
             recipe.AddTile(TileID.LunarCraftingStation);
             recipe.SetResult(this);
             recipe.AddRecipe();
+        }
+
+        public override bool AltFunctionUse(Player player)
+        {
+            return true;
+        }
+
+        public override bool CanUseItem(Player player)
+        {
+            // alt stats
+            if (player.altFunctionUse == 2)
+            {
+                item.damage = 33;
+                item.useAnimation = 9; // burst fire
+                item.useTime = 9;
+                item.reuseDelay = 1;
+                item.UseSound = SoundID.Item72;
+                item.shoot = mod.ProjectileType("VortexLaser");
+                item.useAmmo = AmmoID.Bullet;
+            }
+            // normal stats
+            else
+            {
+                item.damage = 66;
+                item.useAnimation = 15; // burst fire
+                item.useTime = 3;
+                item.reuseDelay = 16;
+                item.UseSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/AR");
+                item.shoot = 10;
+                item.useAmmo = AmmoID.Bullet;
+            }
+            return base.CanUseItem(player);
+        }
+
+        public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
+        {
+            // alt
+            if (player.altFunctionUse == 2)
+            {
+                return true;
+            }
+            // normal
+            else
+            {
+                // rocket
+                if (player.itemAnimation > item.useAnimation - 2)
+                {
+                    Projectile.NewProjectile(position.X, position.Y, speedX / 2, speedY / 2, ProjectileID.VortexBeaterRocket, damage, knockBack, player.whoAmI);
+                }
+                Main.PlaySound(mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/AR"), player.Center);
+                return true;
+            }
+        }
+
+        // Only consume ammo once
+        public override bool ConsumeAmmo(Player player)
+        {
+            return !(player.itemAnimation < item.useAnimation - 2);
         }
 
         // Change hold position
