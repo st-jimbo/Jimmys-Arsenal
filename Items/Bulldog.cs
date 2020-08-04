@@ -10,7 +10,7 @@ namespace jimmysmod.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Bulldog");
-			Tooltip.SetDefault("Fires a five round burst and a homing rocket\nRight click to rapid fire vortex lasers with reduced damage");
+			Tooltip.SetDefault("Fires a five round burst and a homing rocket\nRight click to fire vortex lasers with reduced damage");
 		}
 
 		public override void SetDefaults()
@@ -56,9 +56,6 @@ namespace jimmysmod.Items
             if (player.altFunctionUse == 2)
             {
                 item.damage = 33;
-                item.useAnimation = 9; // burst fire
-                item.useTime = 9;
-                item.reuseDelay = 0;
                 item.UseSound = SoundID.Item72;
                 item.shoot = mod.ProjectileType("VortexLaser");
                 item.useAmmo = 0;
@@ -67,9 +64,6 @@ namespace jimmysmod.Items
             else
             {
                 item.damage = 66;
-                item.useAnimation = 15; // burst fire
-                item.useTime = 3;
-                item.reuseDelay = 16;
                 item.UseSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/AR");
                 item.shoot = 10;
                 item.useAmmo = AmmoID.Bullet;
