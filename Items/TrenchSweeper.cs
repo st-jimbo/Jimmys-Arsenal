@@ -38,7 +38,7 @@ namespace jimmysmod.Items
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddRecipeGroup("jimmysmod:Adamantite", 12);
             recipe.AddIngredient(mod.ItemType("TrenchGun"));
-            recipe.AddTile(TileID.Anvils);
+            recipe.AddTile(TileID.MythrilAnvil);
             recipe.SetResult(this);
             recipe.AddRecipe();
         }
