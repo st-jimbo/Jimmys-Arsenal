@@ -27,7 +27,7 @@ namespace jimmysmod.Items
 			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.noMelee = true;
 			item.knockBack = 4.5f;
-			item.value = Item.sellPrice(gold: 30);
+			item.value = Item.sellPrice(gold: 10);
 			item.rare = 9;
             item.UseSound = SoundID.Item40;
             item.autoReuse = true;

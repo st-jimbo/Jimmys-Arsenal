@@ -24,7 +24,7 @@ namespace jimmysmod.Items
 			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.noMelee = true;
 			item.knockBack = 2.5f;
-			item.value = 500000;
+			item.value = Item.sellPrice(gold: 10);
 			item.rare = 8;
 			item.UseSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/M1919");
             //item.UseSound = SoundID.Item11;
