@@ -30,10 +30,10 @@ namespace jimmysmod.Projectiles
 		{
 			if (projectile.ai[1] == 0)
 			{
-				for (int i = 0; i < 2; i++)
+				for (int i = 0; i < 4; i++)
 				{
 					// Random upward vector.
-					Vector2 vel = new Vector2(Main.rand.NextFloat(-5, 5), Main.rand.NextFloat(-10, -8));
+					Vector2 vel = new Vector2(Main.rand.NextFloat(-8, 8), Main.rand.NextFloat(-10, -8));
 					Projectile.NewProjectile(projectile.Center, vel, ProjectileID.StyngerShrapnel, projectile.damage/2, projectile.knockBack, projectile.owner, 0, 1);
 				}
 			}

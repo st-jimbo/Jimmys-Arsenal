@@ -16,7 +16,7 @@ namespace jimmysmod.Items
 
 		public override void SetDefaults()
 		{
-			item.damage = 145;
+			item.damage = 166;
 			item.ranged = true;
 			item.width = 44;
 			item.height = 38;
@@ -25,7 +25,7 @@ namespace jimmysmod.Items
 			item.useAnimation = 16;
 			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.noMelee = true;
-			item.knockBack = 3f;
+			item.knockBack = 5f;
 			item.value = Item.sellPrice(gold: 20);
 			item.rare = ItemRarityID.Red;
             item.UseSound = SoundID.Item61;
