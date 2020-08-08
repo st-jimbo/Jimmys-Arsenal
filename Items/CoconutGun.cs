@@ -1,5 +1,6 @@
 using Terraria.ID;
 using Terraria.ModLoader;
+using static Terraria.ModLoader.ModContent;
 using Terraria;
 using Microsoft.Xna.Framework;
 
@@ -15,51 +16,49 @@ namespace jimmysmod.Items
 
 		public override void SetDefaults()
 		{
-			item.damage = 10;
+			item.damage = 145;
 			item.ranged = true;
 			item.width = 44;
 			item.height = 38;
-            item.useTime = 10;
-			item.useAnimation = 30;
+			item.scale = 0.9f;
+			item.useTime = 16;
+			item.useAnimation = 16;
 			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.noMelee = true;
-			item.knockBack = 0f;
+			item.knockBack = 3f;
 			item.value = Item.sellPrice(gold: 20);
 			item.rare = ItemRarityID.Red;
             item.UseSound = SoundID.Item61;
             item.autoReuse = true;
-			item.shoot = 10;
-			item.shootSpeed = 5f;
+			item.shoot = ProjectileType<Projectiles.Coconut>();
+			item.shootSpeed = 15f;
 			item.useAmmo = AmmoID.Rocket;
 		}
 
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddRecipeGroup("IronBar", 12);
-			recipe.AddRecipeGroup("jimmysmod:Copper", 8);
-			recipe.AddIngredient(ItemID.Torch, 4);
-            recipe.AddTile(TileID.Anvils);
+			recipe.AddIngredient(ItemID.LunarBar, 12);
+			recipe.AddIngredient(ItemID.Stynger, 1);
+			recipe.AddTile(TileID.LunarCraftingStation);
             recipe.SetResult(this);
             recipe.AddRecipe();
         }
 
-		// Shotgun
 		public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
 		{
-			int numberProjectiles = 3; // amount of shots
-			for (int i = 0; i < numberProjectiles; i++)
+			// Change bullet type
+			if (type != mod.ProjectileType("Coconut"))
 			{
-				Vector2 perturbedSpeed = new Vector2(speedX, speedY).RotatedByRandom(MathHelper.ToRadians(30));
-				Projectile.NewProjectile(position.X, position.Y, perturbedSpeed.X, perturbedSpeed.Y, type, damage, knockBack, player.whoAmI);
+				type = mod.ProjectileType("Coconut"); ;
 			}
-			return false;
+			return true;
 		}
 
 		// Change hold position
 		public override Vector2? HoldoutOffset()
 		{
-			return new Vector2(-10, 1);
+			return new Vector2(-1, 0);
 		}
 	}
 }
