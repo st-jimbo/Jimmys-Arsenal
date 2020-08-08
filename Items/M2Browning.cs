@@ -15,13 +15,13 @@ namespace jimmysmod.Items
 
 		public override void SetDefaults()
 		{
-			item.damage = 145;
+			item.damage = 150;
             item.crit = 6;
 			item.ranged = true;
 			item.width = 146;
 			item.height = 32;
-			item.useTime = 9;
-			item.useAnimation = 9;
+			item.useTime = 8;
+			item.useAnimation = 8;
 			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.noMelee = true;
 			item.knockBack = 3.5f;
@@ -52,8 +52,15 @@ namespace jimmysmod.Items
 			speedX = perturbedSpeed.X;
 			speedY = perturbedSpeed.Y;
 
-            // Change bullet type
-            if (type == ProjectileID.Bullet)
+			// Bullet out of muzzle
+			Vector2 muzzleOffset = Vector2.Normalize(new Vector2(speedX, speedY)) * 25f;
+			if (Collision.CanHit(position, 0, 0, position + muzzleOffset, 0, 0))
+			{
+				position += muzzleOffset;
+			}
+
+			// Change bullet type
+			if (type == ProjectileID.Bullet)
             {
                 type = ProjectileID.BulletHighVelocity;
             }
