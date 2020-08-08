@@ -3,6 +3,7 @@
     - Buffed Orichalcum Battle Rifle and Bulldog
     - M1919 Beast Mode now dropped by Plantera
     - SCAR now dropped by Sand Elementals after Plantera has been defeated
+    - AT Rifle and M82 projectiles are bullets have significantly increased velocity
 
 Adds a bunch of new weapons to supplement progression as well as some buffs to vanilla gear.
 Vanilla rebalance buffs will eventually be moved to its own mod.
