@@ -55,7 +55,7 @@ namespace jimmysmod.Items
             // alt stats
             if (player.altFunctionUse == 2)
             {
-                item.damage = 33;
+                item.damage = 40;
                 item.UseSound = SoundID.Item72;
                 item.shoot = mod.ProjectileType("VortexLaser");
                 item.useAmmo = 0;
@@ -64,6 +64,9 @@ namespace jimmysmod.Items
             else
             {
                 item.damage = 66;
+                item.useAnimation = 15; // burst fire
+                item.useTime = 3;
+                item.reuseDelay = 16;
                 item.UseSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/AR");
                 item.shoot = 10;
                 item.useAmmo = AmmoID.Bullet;
