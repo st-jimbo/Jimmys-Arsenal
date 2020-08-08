@@ -30,7 +30,7 @@ namespace jimmysmod.Projectiles
 		{
 			if (projectile.ai[1] == 0)
 			{
-				for (int i = 0; i < 4; i++)
+				for (int i = 0; i < 2; i++)
 				{
 					// Random upward vector.
 					Vector2 vel = new Vector2(Main.rand.NextFloat(-8, 8), Main.rand.NextFloat(-10, -8));

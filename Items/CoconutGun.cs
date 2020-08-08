@@ -16,13 +16,13 @@ namespace jimmysmod.Items
 
 		public override void SetDefaults()
 		{
-			item.damage = 166;
+			item.damage = 194;
 			item.ranged = true;
 			item.width = 44;
 			item.height = 38;
 			item.scale = 0.9f;
-			item.useTime = 16;
-			item.useAnimation = 16;
+			item.useTime = 22;
+			item.useAnimation = 22;
 			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.noMelee = true;
 			item.knockBack = 5f;
@@ -31,7 +31,7 @@ namespace jimmysmod.Items
             item.UseSound = SoundID.Item61;
             item.autoReuse = true;
 			item.shoot = ProjectileType<Projectiles.Coconut>();
-			item.shootSpeed = 15f;
+			item.shootSpeed = 16f;
 			item.useAmmo = AmmoID.Rocket;
 		}
 
@@ -58,7 +58,7 @@ namespace jimmysmod.Items
 		// Change hold position
 		public override Vector2? HoldoutOffset()
 		{
-			return new Vector2(-1, 0);
+			return new Vector2(-1, -5);
 		}
 	}
 }
