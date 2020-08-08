@@ -1,6 +1,7 @@
 1.1.2 Changelog:
     - Reduced gold/platinum sword damage buffs a bit
     - Buffed Orichalcum Battle Rifle, Bulldog, M2 Browning, SCAR-H, and Imperial Hammer
+    - Adjust sell values of a bunch of items
     - M1919 Beast Mode now dropped by Plantera
     - SCAR now dropped by Sand Elementals after Plantera has been defeated
     - AT Rifle and M82 bullets have significantly increased velocity

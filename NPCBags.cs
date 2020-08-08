@@ -11,7 +11,7 @@ namespace jimmysmod
         {
             if (context == "bossBag" && arg == ItemID.PlanteraBossBag)
             {
-                player.QuickSpawnItem(mod.ItemType("M1919Shorty"), 1);
+                player.QuickSpawnItem(mod.ItemType("M1919Shorty"));
             }
         }
     }
