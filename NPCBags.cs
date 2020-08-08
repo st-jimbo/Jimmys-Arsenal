@@ -9,9 +9,9 @@ namespace jimmysmod
     {
         public override void OpenVanillaBag(string context, Player player, int arg)
         {
-            if (context == "bossbag" && arg == ItemID.PlanteraBossBag)
+            if (context == "bossBag" && arg == ItemID.PlanteraBossBag)
             {
-                player.QuickSpawnItem(mod.ItemType("M1919Shorty"));
+                player.QuickSpawnItem(mod.ItemType("M1919Shorty"), 1);
             }
         }
     }
