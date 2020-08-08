@@ -11,7 +11,7 @@ namespace jimmysmod.Projectiles
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("ATBullet");     //The English name of the projectile
-            ProjectileID.Sets.TrailCacheLength[projectile.type] = 1;    //The length of old position to be recorded
+            ProjectileID.Sets.TrailCacheLength[projectile.type] = 3;    //The length of old position to be recorded
             ProjectileID.Sets.TrailingMode[projectile.type] = 0;        //The recording mode
         }
 
@@ -28,10 +28,10 @@ namespace jimmysmod.Projectiles
             projectile.localNPCHitCooldown = -1;
             projectile.timeLeft = 600;          //The live time for the projectile (60 = 1 second, so 600 is 10 seconds)
             projectile.alpha = 255;             //The transparency of the projectile, 255 for completely transparent. (aiStyle 1 quickly fades the projectile in)
-            projectile.light = 0.5f;            //How much light emit around the projectile
+            projectile.light = 0.75f;            //How much light emit around the projectile
             projectile.ignoreWater = true;          //Does the projectile's speed be influenced by water?
             projectile.tileCollide = true;          //Can the projectile collide with tiles?
-            projectile.extraUpdates = 1;            //Set to above 0 if you want the projectile to update multiple time in a frame
+            projectile.extraUpdates = 3;            //Set to above 0 if you want the projectile to update multiple time in a frame
             aiType = ProjectileID.Bullet;           //Act exactly like default Bullet
         }
 
