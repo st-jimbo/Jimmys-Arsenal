@@ -20,8 +20,8 @@ namespace jimmysmod.Items
 			item.ranged = true;
 			item.width = 72;
 			item.height = 22;
-			item.useTime = 32;
-			item.useAnimation = 32;
+			item.useTime = 27;
+			item.useAnimation = 27;
 			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.noMelee = true;
 			item.knockBack = 9;
