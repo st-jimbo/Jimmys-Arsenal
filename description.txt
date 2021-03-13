@@ -1,10 +1,5 @@
-1.1.2 Changelog:
-    - Reduced gold/platinum sword damage buffs a bit
-    - Buffed Orichalcum Battle Rifle, Bulldog, M2 Browning, SCAR-H, and Imperial Hammer
-    - Adjust sell values of a bunch of items
-    - M1919 Beast Mode now dropped by Plantera
-    - SCAR now dropped by Sand Elementals after Plantera has been defeated
-    - AT Rifle and M82 bullets have significantly increased velocity
+1.1.3 Changelog:
+    - New M1919 and M2 Browning gun sounds
 
 Adds a bunch of new weapons to supplement progression as well as some buffs to vanilla gear.
 Vanilla rebalance buffs will eventually be moved to its own mod.
