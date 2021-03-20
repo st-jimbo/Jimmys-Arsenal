@@ -15,7 +15,7 @@ namespace jimmysmod.Items
 
 		public override void SetDefaults()
 		{
-			item.damage = 14;
+			item.damage = 15;
 			item.ranged = true;
 			item.width = 60;
 			item.height = 20;
