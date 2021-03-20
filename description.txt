@@ -1,5 +1,6 @@
-1.1.3 Changelog:
-    - New M1919 and M2 Browning gun sounds
+1.1.5 Changelog:
+    - New Vortex machine gun
+    - Hellfire Typewriter damage increased from 14 to 15
 
 Adds a bunch of new weapons to supplement progression as well as some buffs to vanilla gear.
 Vanilla rebalance buffs will eventually be moved to its own mod.
